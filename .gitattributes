@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Theme assets are binary: never normalise line endings, never diff as text.
+*.gif binary
+*.png binary
+*.woff2 binary
+*.nfplugin binary

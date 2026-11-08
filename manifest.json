@@ -1,0 +1,3224 @@
+{
+  "schemaVersion": 1,
+  "pluginId": "com.yh100200com.minecraft-gui",
+  "version": "4.22.0",
+  "displayName": "Minecraft GUI (Overworld)",
+  "description": "Two coordinated Minecraft interfaces. Light: the Overworld — grass, oak, cobblestone and stone bricks, bright bevels. Dark: the Deep — deepslate, obsidian, nether brick, dark oak and amethyst, cold bevels. All art is the real vanilla texture palette fetched from davidmc.cn, rendered as 16px tiles and nine-slice GUI frames. Verified against NarraFork v0.9.8 (33fc291) and v0.9.12.",
+  "publisher": {
+    "id": "com.yh100200com",
+    "name": "yh100200com"
+  },
+  "license": "MIT",
+  "engine": {
+    "runtime": "bun",
+    "runtimeVersion": ">=1.2 <2",
+    "hostApi": ">=1.0 <2",
+    "rpc": "narrafork.rpc/1",
+    "features": [],
+    "os": [
+      "linux",
+      "darwin",
+      "win32"
+    ],
+    "arch": [
+      "x64",
+      "arm64"
+    ],
+    "runner": "local-process"
+  },
+  "activationEvents": [],
+  "contributes": {
+    "providers": [],
+    "tools": [],
+    "commands": [],
+    "events": [],
+    "views": [],
+    "themes": [
+      {
+        "id": "overworld",
+        "title": "Minecraft — Overworld",
+        "colorScheme": "both",
+        "tokens": {
+          "primaryColor": "#5b8731",
+          "radius": "0px",
+          "shadow": 6,
+          "colors": {
+            "stone": "#7f7f7f",
+            "dirt": "#866043",
+            "grass": "#91bd59",
+            "oak": "#b8945f",
+            "brick": "#7d7d7d",
+            "sand": "#dbcfa2",
+            "deepslate": "#4a4a52",
+            "blackstone": "#332f38",
+            "nether": "#5a2b2b",
+            "amethyst": "#8c62d0",
+            "diamond": "#4aedd9",
+            "gold": "#f8df4a",
+            "redstone": "#c62828",
+            "emerald": "#17c464",
+            "water": "#3f76e4",
+            "gray": [
+              "#f5f5f5",
+              "#ebebeb",
+              "#dedede",
+              "#c9c9c9",
+              "#a3a3a3",
+              "#787878",
+              "#4a4a4a",
+              "#333333",
+              "#1f1f1f",
+              "#0a0a0a"
+            ],
+            "dark": "#3c3c42",
+            "blue": "#4a7a30",
+            "indigo": "#4a7a30",
+            "white": "#d8d4c8"
+          },
+          "light": {
+            "body": "rgba(255, 255, 255, 0.06)",
+            "text": "#000000",
+            "gradients": {
+              "header": {
+                "from": "#c4c4c4",
+                "to": "#b4b4b4"
+              },
+              "navbar": {
+                "from": "#c9b189",
+                "to": "#b59a72"
+              },
+              "main": {
+                "from": "#cccccc",
+                "to": "#c4c4c4"
+              },
+              "footer": {
+                "from": "#c8c8c8",
+                "to": "#bcbcbc"
+              },
+              "card": {
+                "from": "#dcc9a4",
+                "to": "#cbb68c"
+              },
+              "paper": {
+                "from": "#dac7a2",
+                "to": "#c9b48a"
+              },
+              "modal": {
+                "from": "#d8d2c8",
+                "to": "#cac4ba"
+              },
+              "input": {
+                "from": "#ded9cc",
+                "to": "#d2cdbf"
+              },
+              "inputFocus": {
+                "from": "#e6e1d4",
+                "to": "#e6e1d4"
+              },
+              "button": {
+                "from": "#b4b4b4",
+                "to": "#949494"
+              },
+              "buttonHover": {
+                "from": "#c4c4c4",
+                "to": "#a4a4a4"
+              },
+              "buttonActive": {
+                "from": "#848484",
+                "to": "#909090"
+              },
+              "actionIcon": {
+                "from": "#b0b0b0",
+                "to": "#969696"
+              },
+              "actionIconHover": {
+                "from": "#c0c0c0",
+                "to": "#a6a6a6"
+              },
+              "navLink": {
+                "from": "#a4a4a4",
+                "to": "#8e8e8e"
+              },
+              "navLinkHover": {
+                "from": "#b6b6b6",
+                "to": "#9e9e9e"
+              },
+              "navLinkActive": {
+                "from": "#6e6e6e",
+                "to": "#7c7c7c"
+              },
+              "menu": {
+                "from": "#dccaa5",
+                "to": "#cdb98e"
+              },
+              "menuItem": {
+                "from": "#dfcea9",
+                "to": "#d1c094"
+              },
+              "menuItemHover": {
+                "from": "#c6b489",
+                "to": "#b8a67b"
+              },
+              "badge": {
+                "from": "#5b8731",
+                "to": "#46661f"
+              },
+              "tooltip": {
+                "from": "#e6daba",
+                "to": "#d6caaa"
+              },
+              "table": {
+                "from": "#d5c5a2",
+                "to": "#c6b68e"
+              },
+              "tableHeader": {
+                "from": "#e0d3b2",
+                "to": "#d0c3a2"
+              },
+              "code": {
+                "from": "#2c2c2c",
+                "to": "#222222"
+              },
+              "divider": {
+                "from": "#9a9a9a",
+                "to": "#9a9a9a"
+              },
+              "scrollbar": {
+                "from": "#c6c6c6",
+                "to": "#bcbcbc"
+              },
+              "scrollbarThumb": {
+                "from": "#9e9e9e",
+                "to": "#868686"
+              }
+            },
+            "textColors": {
+              "header": "#000000",
+              "footer": "#000000",
+              "navbar": "#2b1f10",
+              "button": "#ffffff",
+              "buttonHover": "#ffffa0",
+              "buttonActive": "#ffd700",
+              "actionIcon": "#1f1f1f",
+              "actionIconHover": "#000000",
+              "navLink": "#ffffff",
+              "navLinkHover": "#ffffa0",
+              "navLinkActive": "#ffd700",
+              "menu": "#33260f",
+              "menuItem": "#33260f",
+              "menuItemHover": "#150e05",
+              "badge": "#ffffff",
+              "tooltip": "#40330c",
+              "table": "#1a1410",
+              "tableHeader": "#33260f",
+              "code": "#d8dce0",
+              "input": "#2b2b2b",
+              "inputFocus": "#000000",
+              "card": "#33260f",
+              "paper": "#33260f",
+              "modal": "#000000",
+              "main": "#000000",
+              "divider": "#000000",
+              "scrollbar": "#000000",
+              "scrollbarThumb": "#101010"
+            },
+            "borders": {
+              "navbar": {
+                "width": 1,
+                "color": "#6f6f6f",
+                "edges": [
+                  "right"
+                ]
+              },
+              "header": {
+                "width": 1,
+                "color": "#8a7a5a",
+                "edges": [
+                  "bottom"
+                ]
+              },
+              "footer": {
+                "width": 1,
+                "color": "#7d5a38",
+                "edges": [
+                  "top"
+                ]
+              },
+              "tableHeader": {
+                "width": 1,
+                "color": "#8a7a5a",
+                "edges": [
+                  "bottom"
+                ]
+              },
+              "divider": {
+                "width": 1,
+                "color": "#8f8f8f"
+              },
+              "navLinkActive": {
+                "inset": true,
+                "width": 3,
+                "color": "#3a2a14",
+                "radius": 0
+              },
+              "navLink": {
+                "radius": 0
+              }
+            },
+            "backgrounds": {
+              "body": {
+                "image": "assets/tx-sky.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-light",
+                "opacity": 0.05
+              },
+              "app": {
+                "image": "assets/tx-sky.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-light",
+                "opacity": 0.05
+              },
+              "main": {
+                "image": "assets/tx-sky.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-light",
+                "opacity": 0.05
+              },
+              "navbar": {
+                "image": "assets/tx-planks.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.16
+              },
+              "header": {
+                "image": "assets/tx-stone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.18
+              },
+              "footer": {
+                "image": "assets/tx-stone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.82
+              },
+              "card": {
+                "image": "assets/tx-planks-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.4
+              },
+              "paper": {
+                "image": "assets/tx-planks-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.4
+              },
+              "modal": {
+                "image": "assets/tx-planks-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.1
+              },
+              "input": {
+                "image": "assets/tx-smooth-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.72
+              },
+              "navLink": {
+                "image": "assets/tx-stone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.06
+              },
+              "navLinkActive": {
+                "image": "assets/tx-stone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.3
+              },
+              "code": {
+                "image": "assets/tx-smooth-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.34
+              },
+              "table": {
+                "image": "assets/tx-planks-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.18
+              },
+              "tableHeader": {
+                "image": "assets/tx-sandstone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.2
+              },
+              "badge": {
+                "image": "assets/tx-grass.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.08
+              },
+              "menu": {
+                "image": "assets/tx-planks-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.12
+              },
+              "menuItem": {
+                "image": "assets/tx-planks-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.14
+              },
+              "tooltip": {
+                "image": "assets/tx-sandstone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.12
+              },
+              "divider": {
+                "image": "assets/tx-stone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.5
+              },
+              "scrollbar": {
+                "image": "assets/tx-stone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.44
+              },
+              "scrollbarThumb": {
+                "image": "assets/tx-smooth.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.28
+              }
+            },
+            "frames": {
+              "button": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "buttonHover": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "buttonActive": {
+                "image": "assets/frame-button-down.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "actionIcon": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "actionIconHover": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "input": {
+                "image": "assets/frame-sunken.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "inputFocus": {
+                "image": "assets/frame-sunken.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "card": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 7,
+                "repeat": "repeat"
+              },
+              "paper": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 7,
+                "repeat": "repeat"
+              },
+              "modal": {
+                "image": "assets/frame-brick.png",
+                "slice": 8,
+                "width": 9,
+                "repeat": "repeat"
+              },
+              "menu": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "tooltip": {
+                "image": "assets/frame-sandstone.png",
+                "slice": 8,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "code": {
+                "image": "assets/frame-sunken.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "table": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "tableHeader": {
+                "image": "assets/frame-sandstone.png",
+                "slice": 8,
+                "width": 4,
+                "repeat": "repeat"
+              },
+              "badge": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 3,
+                "repeat": "repeat"
+              },
+              "navbar": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "header": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLink": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLinkHover": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLinkActive": {
+                "image": "assets/frame-button-down.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "menuItem": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 4,
+                "repeat": "repeat"
+              },
+              "menuItemHover": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 4,
+                "repeat": "repeat"
+              }
+            },
+            "colors": {}
+          },
+          "dark": {
+            "body": "rgba(30, 32, 48, 0.28)",
+            "text": "#dfe2f2",
+            "gradients": {
+              "header": {
+                "from": "#c4c4c4",
+                "to": "#b4b4b4"
+              },
+              "navbar": {
+                "from": "#c9b189",
+                "to": "#b59a72"
+              },
+              "main": {
+                "from": "#cccccc",
+                "to": "#c4c4c4"
+              },
+              "footer": {
+                "from": "#c8c8c8",
+                "to": "#bcbcbc"
+              },
+              "card": {
+                "from": "#dcc9a4",
+                "to": "#cbb68c"
+              },
+              "paper": {
+                "from": "#dac7a2",
+                "to": "#c9b48a"
+              },
+              "modal": {
+                "from": "#d8d2c8",
+                "to": "#cac4ba"
+              },
+              "input": {
+                "from": "#ded9cc",
+                "to": "#d2cdbf"
+              },
+              "inputFocus": {
+                "from": "#e6e1d4",
+                "to": "#e6e1d4"
+              },
+              "button": {
+                "from": "#b4b4b4",
+                "to": "#949494"
+              },
+              "buttonHover": {
+                "from": "#c4c4c4",
+                "to": "#a4a4a4"
+              },
+              "buttonActive": {
+                "from": "#848484",
+                "to": "#909090"
+              },
+              "actionIcon": {
+                "from": "#b0b0b0",
+                "to": "#969696"
+              },
+              "actionIconHover": {
+                "from": "#c0c0c0",
+                "to": "#a6a6a6"
+              },
+              "navLink": {
+                "from": "#a4a4a4",
+                "to": "#8e8e8e"
+              },
+              "navLinkHover": {
+                "from": "#b6b6b6",
+                "to": "#9e9e9e"
+              },
+              "navLinkActive": {
+                "from": "#6e6e6e",
+                "to": "#7c7c7c"
+              },
+              "menu": {
+                "from": "#dccaa5",
+                "to": "#cdb98e"
+              },
+              "menuItem": {
+                "from": "#dfcea9",
+                "to": "#d1c094"
+              },
+              "menuItemHover": {
+                "from": "#c6b489",
+                "to": "#b8a67b"
+              },
+              "badge": {
+                "from": "#5b8731",
+                "to": "#46661f"
+              },
+              "tooltip": {
+                "from": "#e6daba",
+                "to": "#d6caaa"
+              },
+              "table": {
+                "from": "#d5c5a2",
+                "to": "#c6b68e"
+              },
+              "tableHeader": {
+                "from": "#e0d3b2",
+                "to": "#d0c3a2"
+              },
+              "code": {
+                "from": "#2c2c2c",
+                "to": "#222222"
+              },
+              "divider": {
+                "from": "#9a9a9a",
+                "to": "#9a9a9a"
+              },
+              "scrollbar": {
+                "from": "#c6c6c6",
+                "to": "#bcbcbc"
+              },
+              "scrollbarThumb": {
+                "from": "#9e9e9e",
+                "to": "#868686"
+              }
+            },
+            "textColors": {
+              "header": "#e8e8f0",
+              "footer": "#e8e8f0",
+              "navbar": "#2b1f10",
+              "button": "#ffffff",
+              "buttonHover": "#ffffa0",
+              "buttonActive": "#ffd700",
+              "actionIcon": "#1f1f1f",
+              "actionIconHover": "#000000",
+              "navLink": "#ffffff",
+              "navLinkHover": "#ffffa0",
+              "navLinkActive": "#ffd700",
+              "menu": "#33260f",
+              "menuItem": "#33260f",
+              "menuItemHover": "#150e05",
+              "badge": "#ffffff",
+              "tooltip": "#40330c",
+              "table": "#1a1410",
+              "tableHeader": "#33260f",
+              "code": "#d8dce0",
+              "input": "#2b2b2b",
+              "inputFocus": "#000000",
+              "card": "#33260f",
+              "paper": "#33260f",
+              "modal": "#000000",
+              "main": "#e8e8f0",
+              "divider": "#000000",
+              "scrollbar": "#000000",
+              "scrollbarThumb": "#101010"
+            },
+            "borders": {
+              "navbar": {
+                "width": 1,
+                "color": "#6f6f6f",
+                "edges": [
+                  "right"
+                ]
+              },
+              "header": {
+                "width": 1,
+                "color": "#8a7a5a",
+                "edges": [
+                  "bottom"
+                ]
+              },
+              "footer": {
+                "width": 1,
+                "color": "#7d5a38",
+                "edges": [
+                  "top"
+                ]
+              },
+              "tableHeader": {
+                "width": 1,
+                "color": "#8a7a5a",
+                "edges": [
+                  "bottom"
+                ]
+              },
+              "divider": {
+                "width": 1,
+                "color": "#8f8f8f"
+              },
+              "navLinkActive": {
+                "inset": true,
+                "width": 3,
+                "color": "#3a2a14",
+                "radius": 0
+              },
+              "navLink": {
+                "radius": 0
+              }
+            },
+            "backgrounds": {
+              "body": {
+                "image": "assets/tx-sky-night.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-light",
+                "opacity": 0.05
+              },
+              "app": {
+                "image": "assets/tx-sky-night.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-light",
+                "opacity": 0.05
+              },
+              "main": {
+                "image": "assets/tx-sky-night.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-light",
+                "opacity": 0.05
+              },
+              "navbar": {
+                "image": "assets/tx-planks.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.16
+              },
+              "header": {
+                "image": "assets/tx-stone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.18
+              },
+              "footer": {
+                "image": "assets/tx-stone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.82
+              },
+              "card": {
+                "image": "assets/tx-planks-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.4
+              },
+              "paper": {
+                "image": "assets/tx-planks-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.4
+              },
+              "modal": {
+                "image": "assets/tx-planks-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.1
+              },
+              "input": {
+                "image": "assets/tx-smooth-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.72
+              },
+              "navLink": {
+                "image": "assets/tx-stone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.06
+              },
+              "navLinkActive": {
+                "image": "assets/tx-stone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.3
+              },
+              "code": {
+                "image": "assets/tx-smooth-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.34
+              },
+              "table": {
+                "image": "assets/tx-planks-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.18
+              },
+              "tableHeader": {
+                "image": "assets/tx-sandstone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.2
+              },
+              "badge": {
+                "image": "assets/tx-grass.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.08
+              },
+              "menu": {
+                "image": "assets/tx-planks-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.12
+              },
+              "menuItem": {
+                "image": "assets/tx-planks-soft.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.14
+              },
+              "tooltip": {
+                "image": "assets/tx-sandstone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.12
+              },
+              "divider": {
+                "image": "assets/tx-stone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.5
+              },
+              "scrollbar": {
+                "image": "assets/tx-stone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.44
+              },
+              "scrollbarThumb": {
+                "image": "assets/tx-smooth.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.28
+              }
+            },
+            "frames": {
+              "button": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "buttonHover": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "buttonActive": {
+                "image": "assets/frame-button-down.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "actionIcon": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "actionIconHover": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "input": {
+                "image": "assets/frame-sunken.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "inputFocus": {
+                "image": "assets/frame-sunken.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "card": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 7,
+                "repeat": "repeat"
+              },
+              "paper": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 7,
+                "repeat": "repeat"
+              },
+              "modal": {
+                "image": "assets/frame-brick.png",
+                "slice": 8,
+                "width": 9,
+                "repeat": "repeat"
+              },
+              "menu": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "tooltip": {
+                "image": "assets/frame-sandstone.png",
+                "slice": 8,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "code": {
+                "image": "assets/frame-sunken.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "table": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "tableHeader": {
+                "image": "assets/frame-sandstone.png",
+                "slice": 8,
+                "width": 4,
+                "repeat": "repeat"
+              },
+              "badge": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 3,
+                "repeat": "repeat"
+              },
+              "navbar": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "header": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLink": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLinkHover": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLinkActive": {
+                "image": "assets/frame-button-down.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "menuItem": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 4,
+                "repeat": "repeat"
+              },
+              "menuItemHover": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 4,
+                "repeat": "repeat"
+              }
+            },
+            "colors": {
+              "gray": [
+                "#2a2a30",
+                "#333340",
+                "#3f3f4c",
+                "#4d4d5c",
+                "#6a6a7a",
+                "#8f8f9f",
+                "#b4b4c2",
+                "#d4d4de",
+                "#e8e8f0",
+                "#ffffff"
+              ]
+            }
+          },
+          "fontFamily": {
+            "font": "pixel",
+            "fallback": "system-ui"
+          },
+          "fontFamilyHeadings": {
+            "font": "pixel",
+            "fallback": "system-ui"
+          },
+          "fontFamilyMonospace": {
+            "font": "pixel",
+            "fallback": "monospace"
+          },
+          "fontSize": "20px"
+        },
+        "fonts": [
+          {
+            "id": "pixel",
+            "source": "assets/font-pixel-10.woff2",
+            "weight": {
+              "min": 400,
+              "max": 900
+            },
+            "style": "normal",
+            "display": "swap"
+          }
+        ]
+      },
+      {
+        "id": "end",
+        "title": "Minecraft — The End",
+        "colorScheme": "both",
+        "tokens": {
+          "primaryColor": "#5b8731",
+          "radius": "0px",
+          "shadow": 6,
+          "colors": {
+            "stone": "#7f7f7f",
+            "dirt": "#866043",
+            "grass": "#91bd59",
+            "oak": "#b8945f",
+            "brick": "#7d7d7d",
+            "sand": "#dbcfa2",
+            "deepslate": "#4a4a52",
+            "blackstone": "#332f38",
+            "nether": "#5a2b2b",
+            "amethyst": "#8c62d0",
+            "diamond": "#4aedd9",
+            "gold": "#f8df4a",
+            "redstone": "#c62828",
+            "emerald": "#17c464",
+            "water": "#3f76e4",
+            "gray": [
+              "#f5f5f5",
+              "#ebebeb",
+              "#dedede",
+              "#c9c9c9",
+              "#a3a3a3",
+              "#787878",
+              "#4a4a4a",
+              "#333333",
+              "#1f1f1f",
+              "#0a0a0a"
+            ],
+            "dark": "#3c3c42",
+            "blue": "#4a7a30",
+            "indigo": "#4a7a30",
+            "white": "#d8d4c8"
+          },
+          "light": {
+            "body": "rgba(255, 255, 255, 0.10)",
+            "text": "#241a38",
+            "gradients": {
+              "header": {
+                "from": "#c4c4c4",
+                "to": "#b4b4b4"
+              },
+              "navbar": {
+                "from": "#c9b189",
+                "to": "#b59a72"
+              },
+              "main": {
+                "from": "#cccccc",
+                "to": "#c4c4c4"
+              },
+              "footer": {
+                "from": "#c8c8c8",
+                "to": "#bcbcbc"
+              },
+              "card": {
+                "from": "#dcc9a4",
+                "to": "#cbb68c"
+              },
+              "paper": {
+                "from": "#dac7a2",
+                "to": "#c9b48a"
+              },
+              "modal": {
+                "from": "#d8d2c8",
+                "to": "#cac4ba"
+              },
+              "input": {
+                "from": "#ded9cc",
+                "to": "#d2cdbf"
+              },
+              "inputFocus": {
+                "from": "#e6e1d4",
+                "to": "#e6e1d4"
+              },
+              "button": {
+                "from": "#b4b4b4",
+                "to": "#949494"
+              },
+              "buttonHover": {
+                "from": "#c4c4c4",
+                "to": "#a4a4a4"
+              },
+              "buttonActive": {
+                "from": "#848484",
+                "to": "#909090"
+              },
+              "actionIcon": {
+                "from": "#b0b0b0",
+                "to": "#969696"
+              },
+              "actionIconHover": {
+                "from": "#c0c0c0",
+                "to": "#a6a6a6"
+              },
+              "navLink": {
+                "from": "#a4a4a4",
+                "to": "#8e8e8e"
+              },
+              "navLinkHover": {
+                "from": "#b6b6b6",
+                "to": "#9e9e9e"
+              },
+              "navLinkActive": {
+                "from": "#6e6e6e",
+                "to": "#7c7c7c"
+              },
+              "menu": {
+                "from": "#dccaa5",
+                "to": "#cdb98e"
+              },
+              "menuItem": {
+                "from": "#dfcea9",
+                "to": "#d1c094"
+              },
+              "menuItemHover": {
+                "from": "#c6b489",
+                "to": "#b8a67b"
+              },
+              "badge": {
+                "from": "#5b8731",
+                "to": "#46661f"
+              },
+              "tooltip": {
+                "from": "#e6daba",
+                "to": "#d6caaa"
+              },
+              "table": {
+                "from": "#d5c5a2",
+                "to": "#c6b68e"
+              },
+              "tableHeader": {
+                "from": "#e0d3b2",
+                "to": "#d0c3a2"
+              },
+              "code": {
+                "from": "#2c2c2c",
+                "to": "#222222"
+              },
+              "divider": {
+                "from": "#9a9a9a",
+                "to": "#9a9a9a"
+              },
+              "scrollbar": {
+                "from": "#c6c6c6",
+                "to": "#bcbcbc"
+              },
+              "scrollbarThumb": {
+                "from": "#9e9e9e",
+                "to": "#868686"
+              }
+            },
+            "textColors": {
+              "header": "#1a1228",
+              "footer": "#000000",
+              "navbar": "#2b1f10",
+              "button": "#ffffff",
+              "buttonHover": "#ffffa0",
+              "buttonActive": "#ffd700",
+              "actionIcon": "#1f1f1f",
+              "actionIconHover": "#000000",
+              "navLink": "#ffffff",
+              "navLinkHover": "#ffffa0",
+              "navLinkActive": "#ffd700",
+              "menu": "#33260f",
+              "menuItem": "#33260f",
+              "menuItemHover": "#150e05",
+              "badge": "#ffffff",
+              "tooltip": "#40330c",
+              "table": "#1a1410",
+              "tableHeader": "#33260f",
+              "code": "#d8dce0",
+              "input": "#2b2b2b",
+              "inputFocus": "#000000",
+              "card": "#33260f",
+              "paper": "#33260f",
+              "modal": "#000000",
+              "main": "#241a38",
+              "divider": "#000000",
+              "scrollbar": "#000000",
+              "scrollbarThumb": "#101010"
+            },
+            "borders": {
+              "navbar": {
+                "width": 1,
+                "color": "#6f6f6f",
+                "edges": [
+                  "right"
+                ]
+              },
+              "header": {
+                "width": 1,
+                "color": "#8a7a5a",
+                "edges": [
+                  "bottom"
+                ]
+              },
+              "footer": {
+                "width": 1,
+                "color": "#7d5a38",
+                "edges": [
+                  "top"
+                ]
+              },
+              "tableHeader": {
+                "width": 1,
+                "color": "#8a7a5a",
+                "edges": [
+                  "bottom"
+                ]
+              },
+              "divider": {
+                "width": 1,
+                "color": "#8f8f8f"
+              },
+              "navLinkActive": {
+                "inset": true,
+                "width": 3,
+                "color": "#3a2a14",
+                "radius": 0
+              },
+              "navLink": {
+                "radius": 0
+              }
+            },
+            "backgrounds": {
+              "body": {
+                "image": "assets/tx-end-light.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-light",
+                "opacity": 0.05
+              },
+              "app": {
+                "image": "assets/tx-end-light.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-light",
+                "opacity": 0.05
+              },
+              "main": {
+                "image": "assets/tx-end-light.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-light",
+                "opacity": 0.06
+              },
+              "navbar": {
+                "image": "assets/tx-endstone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.16
+              },
+              "header": {
+                "image": "assets/tx-endstone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.18
+              },
+              "footer": {
+                "image": "assets/tx-endstone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.82
+              },
+              "card": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.4
+              },
+              "paper": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.4
+              },
+              "modal": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.1
+              },
+              "input": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.72
+              },
+              "navLink": {
+                "image": "assets/tx-endstone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.06
+              },
+              "navLinkActive": {
+                "image": "assets/tx-endstone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.3
+              },
+              "code": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.34
+              },
+              "table": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.18
+              },
+              "tableHeader": {
+                "image": "assets/tx-endstone-brick.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.2
+              },
+              "badge": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.08
+              },
+              "menu": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.12
+              },
+              "menuItem": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.14
+              },
+              "tooltip": {
+                "image": "assets/tx-endstone-brick.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.12
+              },
+              "divider": {
+                "image": "assets/tx-endstone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.5
+              },
+              "scrollbar": {
+                "image": "assets/tx-endstone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.44
+              },
+              "scrollbarThumb": {
+                "image": "assets/tx-endstone-brick.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-light",
+                "opacity": 0.28
+              }
+            },
+            "frames": {
+              "button": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "buttonHover": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "buttonActive": {
+                "image": "assets/frame-button-down.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "actionIcon": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "actionIconHover": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "input": {
+                "image": "assets/frame-sunken.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "inputFocus": {
+                "image": "assets/frame-sunken.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "card": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 7,
+                "repeat": "repeat"
+              },
+              "paper": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 7,
+                "repeat": "repeat"
+              },
+              "modal": {
+                "image": "assets/frame-brick.png",
+                "slice": 8,
+                "width": 9,
+                "repeat": "repeat"
+              },
+              "menu": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "tooltip": {
+                "image": "assets/frame-sandstone.png",
+                "slice": 8,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "code": {
+                "image": "assets/frame-sunken.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "table": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "tableHeader": {
+                "image": "assets/frame-sandstone.png",
+                "slice": 8,
+                "width": 4,
+                "repeat": "repeat"
+              },
+              "badge": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 3,
+                "repeat": "repeat"
+              },
+              "navbar": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "header": {
+                "image": "assets/frame-plank.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLink": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLinkHover": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLinkActive": {
+                "image": "assets/frame-button-down.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "menuItem": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 4,
+                "repeat": "repeat"
+              },
+              "menuItemHover": {
+                "image": "assets/frame-button.png",
+                "slice": 6,
+                "width": 4,
+                "repeat": "repeat"
+              }
+            },
+            "colors": {}
+          },
+          "dark": {
+            "body": "rgba(46, 40, 60, 0.30)",
+            "text": "#e6e2f2",
+            "gradients": {
+              "header": {
+                "from": "#4e4e58",
+                "to": "#42424c"
+              },
+              "navbar": {
+                "from": "#4a4a54",
+                "to": "#3e3e48"
+              },
+              "main": {
+                "from": "#3e4048",
+                "to": "#36383e"
+              },
+              "footer": {
+                "from": "#40424a",
+                "to": "#36383e"
+              },
+              "card": {
+                "from": "#463c36",
+                "to": "#38302a"
+              },
+              "paper": {
+                "from": "#443a34",
+                "to": "#362e28"
+              },
+              "modal": {
+                "from": "#4a3a3a",
+                "to": "#3c2e2e"
+              },
+              "input": {
+                "from": "#3a3a42",
+                "to": "#44444c"
+              },
+              "inputFocus": {
+                "from": "#40404a",
+                "to": "#40404a"
+              },
+              "button": {
+                "from": "#5a5a62",
+                "to": "#44444c"
+              },
+              "buttonHover": {
+                "from": "#6a6a72",
+                "to": "#52525c"
+              },
+              "buttonActive": {
+                "from": "#32323a",
+                "to": "#3c3c44"
+              },
+              "actionIcon": {
+                "from": "#5a5a62",
+                "to": "#48484f"
+              },
+              "actionIconHover": {
+                "from": "#6a6a72",
+                "to": "#56565e"
+              },
+              "navLink": {
+                "from": "#55555f",
+                "to": "#44444e"
+              },
+              "navLinkHover": {
+                "from": "#65656f",
+                "to": "#54545e"
+              },
+              "navLinkActive": {
+                "from": "#2e2e36",
+                "to": "#383842"
+              },
+              "menu": {
+                "from": "#443a34",
+                "to": "#382f2a"
+              },
+              "menuItem": {
+                "from": "#443a34",
+                "to": "#3a3230"
+              },
+              "menuItemHover": {
+                "from": "#54483e",
+                "to": "#463c34"
+              },
+              "badge": {
+                "from": "#6b4a9e",
+                "to": "#543a80"
+              },
+              "tooltip": {
+                "from": "#3a2c46",
+                "to": "#2e2438"
+              },
+              "table": {
+                "from": "#42382f",
+                "to": "#38302a"
+              },
+              "tableHeader": {
+                "from": "#4c4040",
+                "to": "#40363a"
+              },
+              "code": {
+                "from": "#1c1c22",
+                "to": "#141418"
+              },
+              "divider": {
+                "from": "#54545c",
+                "to": "#54545c"
+              },
+              "scrollbar": {
+                "from": "#3e3e46",
+                "to": "#34343c"
+              },
+              "scrollbarThumb": {
+                "from": "#5e5e68",
+                "to": "#4a4a54"
+              }
+            },
+            "textColors": {
+              "header": "#e8e8f0",
+              "footer": "#d8d8e0",
+              "navbar": "#e0e0e8",
+              "button": "#ffffff",
+              "buttonHover": "#ffffa0",
+              "buttonActive": "#ffd700",
+              "actionIcon": "#e0e0e8",
+              "actionIconHover": "#ffffff",
+              "navLink": "#f0f0f8",
+              "navLinkHover": "#ffffa0",
+              "navLinkActive": "#ffd700",
+              "menu": "#e8dcc8",
+              "menuItem": "#e8dcc8",
+              "menuItemHover": "#ffffff",
+              "badge": "#f0e8ff",
+              "tooltip": "#e0d0f0",
+              "table": "#e8dcc8",
+              "tableHeader": "#f0e4d0",
+              "code": "#c8c8d4",
+              "input": "#e8e8f0",
+              "inputFocus": "#ffffff",
+              "card": "#e8dcc8",
+              "paper": "#e8dcc8",
+              "modal": "#f0dcd8",
+              "main": "#dcdce4",
+              "divider": "#c8c8d0",
+              "scrollbar": "#c8c8d0",
+              "scrollbarThumb": "#e0e0e8"
+            },
+            "borders": {
+              "navbar": {
+                "width": 1,
+                "color": "#241e1a",
+                "edges": [
+                  "right"
+                ]
+              },
+              "header": {
+                "width": 1,
+                "color": "#241e1a",
+                "edges": [
+                  "bottom"
+                ]
+              },
+              "footer": {
+                "width": 1,
+                "color": "#241e1a",
+                "edges": [
+                  "top"
+                ]
+              },
+              "tableHeader": {
+                "width": 1,
+                "color": "#241e1a",
+                "edges": [
+                  "bottom"
+                ]
+              },
+              "divider": {
+                "width": 1,
+                "color": "#4a4a54"
+              },
+              "navLinkActive": {
+                "inset": true,
+                "width": 3,
+                "color": "#0c0906",
+                "radius": 0
+              },
+              "navLink": {
+                "radius": 0
+              }
+            },
+            "backgrounds": {
+              "body": {
+                "image": "assets/tx-end.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-dark",
+                "opacity": 0.05
+              },
+              "app": {
+                "image": "assets/tx-end.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-dark",
+                "opacity": 0.05
+              },
+              "main": {
+                "image": "assets/tx-end.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-dark",
+                "opacity": 0.08
+              },
+              "navbar": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.18
+              },
+              "header": {
+                "image": "assets/tx-endstone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.16
+              },
+              "footer": {
+                "image": "assets/tx-obsidian-ui.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.82
+              },
+              "card": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.42
+              },
+              "paper": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.42
+              },
+              "modal": {
+                "image": "assets/tx-endstone-brick.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.12
+              },
+              "input": {
+                "image": "assets/tx-obsidian-ui.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.62
+              },
+              "navLink": {
+                "image": "assets/tx-obsidian-ui.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.06
+              },
+              "navLinkActive": {
+                "image": "assets/tx-obsidian-ui.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.32
+              },
+              "code": {
+                "image": "assets/tx-obsidian.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.32
+              },
+              "table": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.22
+              },
+              "tableHeader": {
+                "image": "assets/tx-obsidian-ui.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.26
+              },
+              "badge": {
+                "image": "assets/tx-amethyst.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.1
+              },
+              "menu": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.14
+              },
+              "menuItem": {
+                "image": "assets/tx-purpur.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.16
+              },
+              "tooltip": {
+                "image": "assets/tx-amethyst.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.14
+              },
+              "divider": {
+                "image": "assets/tx-obsidian-ui.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.42
+              },
+              "scrollbar": {
+                "image": "assets/tx-endstone.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.38
+              },
+              "scrollbarThumb": {
+                "image": "assets/tx-obsidian-ui.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.26
+              }
+            },
+            "frames": {
+              "button": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "buttonHover": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "buttonActive": {
+                "image": "assets/frame-button-down-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "actionIcon": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "actionIconHover": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "input": {
+                "image": "assets/frame-sunken-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "inputFocus": {
+                "image": "assets/frame-sunken-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "card": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 7,
+                "repeat": "repeat"
+              },
+              "paper": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 7,
+                "repeat": "repeat"
+              },
+              "modal": {
+                "image": "assets/frame-brick-dark.png",
+                "slice": 8,
+                "width": 9,
+                "repeat": "repeat"
+              },
+              "menu": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "tooltip": {
+                "image": "assets/frame-amethyst-dark.png",
+                "slice": 8,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "code": {
+                "image": "assets/frame-sunken-dark.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "table": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "tableHeader": {
+                "image": "assets/frame-brick-dark.png",
+                "slice": 8,
+                "width": 4,
+                "repeat": "repeat"
+              },
+              "badge": {
+                "image": "assets/frame-amethyst-dark.png",
+                "slice": 8,
+                "width": 3,
+                "repeat": "repeat"
+              },
+              "navbar": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "header": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLink": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLinkHover": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLinkActive": {
+                "image": "assets/frame-button-down-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "menuItem": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 4,
+                "repeat": "repeat"
+              },
+              "menuItemHover": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 4,
+                "repeat": "repeat"
+              }
+            },
+            "colors": {}
+          },
+          "fontFamily": {
+            "font": "pixel",
+            "fallback": "system-ui"
+          },
+          "fontFamilyHeadings": {
+            "font": "pixel",
+            "fallback": "system-ui"
+          },
+          "fontFamilyMonospace": {
+            "font": "pixel",
+            "fallback": "monospace"
+          },
+          "fontSize": "20px"
+        },
+        "fonts": [
+          {
+            "id": "pixel",
+            "source": "assets/font-pixel-10.woff2",
+            "weight": {
+              "min": 400,
+              "max": 900
+            },
+            "style": "normal",
+            "display": "swap"
+          }
+        ]
+      },
+      {
+        "id": "nether",
+        "title": "Minecraft — Nether",
+        "colorScheme": "both",
+        "tokens": {
+          "primaryColor": "#5b8731",
+          "radius": "0px",
+          "shadow": 6,
+          "colors": {
+            "stone": "#7f7f7f",
+            "dirt": "#866043",
+            "grass": "#91bd59",
+            "oak": "#b8945f",
+            "brick": "#7d7d7d",
+            "sand": "#dbcfa2",
+            "deepslate": "#4a4a52",
+            "blackstone": "#332f38",
+            "nether": "#5a2b2b",
+            "amethyst": "#8c62d0",
+            "diamond": "#4aedd9",
+            "gold": "#f8df4a",
+            "redstone": "#c62828",
+            "emerald": "#17c464",
+            "water": "#3f76e4",
+            "gray": [
+              "#f5f5f5",
+              "#ebebeb",
+              "#dedede",
+              "#c9c9c9",
+              "#a3a3a3",
+              "#787878",
+              "#4a4a4a",
+              "#333333",
+              "#1f1f1f",
+              "#0a0a0a"
+            ],
+            "dark": "#3c3c42",
+            "blue": "#4a7a30",
+            "indigo": "#4a7a30",
+            "white": "#d8d4c8"
+          },
+          "light": {
+            "body": "rgba(58, 30, 22, 0.22)",
+            "text": "#150a06",
+            "gradients": {
+              "header": {
+                "from": "#4e4e58",
+                "to": "#42424c"
+              },
+              "navbar": {
+                "from": "#4a4a54",
+                "to": "#3e3e48"
+              },
+              "main": {
+                "from": "#3e4048",
+                "to": "#36383e"
+              },
+              "footer": {
+                "from": "#40424a",
+                "to": "#36383e"
+              },
+              "card": {
+                "from": "#463c36",
+                "to": "#38302a"
+              },
+              "paper": {
+                "from": "#443a34",
+                "to": "#362e28"
+              },
+              "modal": {
+                "from": "#4a3a3a",
+                "to": "#3c2e2e"
+              },
+              "input": {
+                "from": "#3a3a42",
+                "to": "#44444c"
+              },
+              "inputFocus": {
+                "from": "#40404a",
+                "to": "#40404a"
+              },
+              "button": {
+                "from": "#5a5a62",
+                "to": "#44444c"
+              },
+              "buttonHover": {
+                "from": "#6a6a72",
+                "to": "#52525c"
+              },
+              "buttonActive": {
+                "from": "#32323a",
+                "to": "#3c3c44"
+              },
+              "actionIcon": {
+                "from": "#5a5a62",
+                "to": "#48484f"
+              },
+              "actionIconHover": {
+                "from": "#6a6a72",
+                "to": "#56565e"
+              },
+              "navLink": {
+                "from": "#55555f",
+                "to": "#44444e"
+              },
+              "navLinkHover": {
+                "from": "#65656f",
+                "to": "#54545e"
+              },
+              "navLinkActive": {
+                "from": "#2e2e36",
+                "to": "#383842"
+              },
+              "menu": {
+                "from": "#443a34",
+                "to": "#382f2a"
+              },
+              "menuItem": {
+                "from": "#443a34",
+                "to": "#3a3230"
+              },
+              "menuItemHover": {
+                "from": "#54483e",
+                "to": "#463c34"
+              },
+              "badge": {
+                "from": "#6b4a9e",
+                "to": "#543a80"
+              },
+              "tooltip": {
+                "from": "#3a2c46",
+                "to": "#2e2438"
+              },
+              "table": {
+                "from": "#42382f",
+                "to": "#38302a"
+              },
+              "tableHeader": {
+                "from": "#4c4040",
+                "to": "#40363a"
+              },
+              "code": {
+                "from": "#1c1c22",
+                "to": "#141418"
+              },
+              "divider": {
+                "from": "#54545c",
+                "to": "#54545c"
+              },
+              "scrollbar": {
+                "from": "#3e3e46",
+                "to": "#34343c"
+              },
+              "scrollbarThumb": {
+                "from": "#5e5e68",
+                "to": "#4a4a54"
+              }
+            },
+            "textColors": {
+              "header": "#150a06",
+              "footer": "#150a06",
+              "navbar": "#150a06",
+              "button": "#150a06",
+              "buttonHover": "#150a06",
+              "buttonActive": "#150a06",
+              "actionIcon": "#150a06",
+              "actionIconHover": "#150a06",
+              "navLink": "#150a06",
+              "navLinkHover": "#150a06",
+              "navLinkActive": "#150a06",
+              "menu": "#150a06",
+              "menuItem": "#150a06",
+              "menuItemHover": "#150a06",
+              "badge": "#150a06",
+              "tooltip": "#150a06",
+              "table": "#150a06",
+              "tableHeader": "#150a06",
+              "code": "#150a06",
+              "input": "#150a06",
+              "inputFocus": "#150a06",
+              "card": "#150a06",
+              "paper": "#150a06",
+              "modal": "#150a06",
+              "main": "#150a06",
+              "divider": "#150a06",
+              "scrollbar": "#150a06",
+              "scrollbarThumb": "#150a06"
+            },
+            "borders": {
+              "navbar": {
+                "width": 1,
+                "color": "#241e1a",
+                "edges": [
+                  "right"
+                ]
+              },
+              "header": {
+                "width": 1,
+                "color": "#241e1a",
+                "edges": [
+                  "bottom"
+                ]
+              },
+              "footer": {
+                "width": 1,
+                "color": "#241e1a",
+                "edges": [
+                  "top"
+                ]
+              },
+              "tableHeader": {
+                "width": 1,
+                "color": "#241e1a",
+                "edges": [
+                  "bottom"
+                ]
+              },
+              "divider": {
+                "width": 1,
+                "color": "#4a4a54"
+              },
+              "navLinkActive": {
+                "inset": true,
+                "width": 3,
+                "color": "#0c0906",
+                "radius": 0
+              },
+              "navLink": {
+                "radius": 0
+              }
+            },
+            "backgrounds": {
+              "body": {
+                "image": "assets/tx-nether-light.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-dark",
+                "opacity": 0.05
+              },
+              "app": {
+                "image": "assets/tx-nether-light.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-dark",
+                "opacity": 0.05
+              },
+              "main": {
+                "image": "assets/tx-nether-light.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-dark",
+                "opacity": 0.05
+              },
+              "navbar": {
+                "image": "assets/tx-blackbrick-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.12
+              },
+              "header": {
+                "image": "assets/tx-deepslate-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.16
+              },
+              "footer": {
+                "image": "assets/tx-obsidian-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.3
+              },
+              "card": {
+                "image": "assets/tx-darkoak-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.3
+              },
+              "paper": {
+                "image": "assets/tx-darkoak-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.3
+              },
+              "modal": {
+                "image": "assets/tx-netherbrick-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.12
+              },
+              "input": {
+                "image": "assets/tx-obsidian-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.3
+              },
+              "navLink": {
+                "image": "assets/tx-obsidian-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.06
+              },
+              "navLinkActive": {
+                "image": "assets/tx-obsidian-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.3
+              },
+              "code": {
+                "image": "assets/tx-deepslate-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.3
+              },
+              "table": {
+                "image": "assets/tx-darkoak-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.22
+              },
+              "tableHeader": {
+                "image": "assets/tx-obsidian-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.26
+              },
+              "badge": {
+                "image": "assets/tx-amethyst.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.1
+              },
+              "menu": {
+                "image": "assets/tx-darkoak-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.14
+              },
+              "menuItem": {
+                "image": "assets/tx-darkoak-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.16
+              },
+              "tooltip": {
+                "image": "assets/tx-amethyst.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.14
+              },
+              "divider": {
+                "image": "assets/tx-obsidian-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.3
+              },
+              "scrollbar": {
+                "image": "assets/tx-deepslate-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.3
+              },
+              "scrollbarThumb": {
+                "image": "assets/tx-obsidian-light.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.26
+              }
+            },
+            "frames": {
+              "button": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "buttonHover": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "buttonActive": {
+                "image": "assets/frame-button-down-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "actionIcon": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "actionIconHover": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "input": {
+                "image": "assets/frame-sunken-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "inputFocus": {
+                "image": "assets/frame-sunken-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "card": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 7,
+                "repeat": "repeat"
+              },
+              "paper": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 7,
+                "repeat": "repeat"
+              },
+              "modal": {
+                "image": "assets/frame-brick-dark.png",
+                "slice": 8,
+                "width": 9,
+                "repeat": "repeat"
+              },
+              "menu": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "tooltip": {
+                "image": "assets/frame-amethyst-dark.png",
+                "slice": 8,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "code": {
+                "image": "assets/frame-sunken-dark.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "table": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "tableHeader": {
+                "image": "assets/frame-brick-dark.png",
+                "slice": 8,
+                "width": 4,
+                "repeat": "repeat"
+              },
+              "badge": {
+                "image": "assets/frame-amethyst-dark.png",
+                "slice": 8,
+                "width": 3,
+                "repeat": "repeat"
+              },
+              "navbar": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "header": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLink": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLinkHover": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLinkActive": {
+                "image": "assets/frame-button-down-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "menuItem": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 4,
+                "repeat": "repeat"
+              },
+              "menuItemHover": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 4,
+                "repeat": "repeat"
+              }
+            },
+            "colors": {}
+          },
+          "dark": {
+            "body": "rgba(60, 60, 66, 0.25)",
+            "text": "#dcdce4",
+            "gradients": {
+              "header": {
+                "from": "#4e4e58",
+                "to": "#42424c"
+              },
+              "navbar": {
+                "from": "#4a4a54",
+                "to": "#3e3e48"
+              },
+              "main": {
+                "from": "#3e4048",
+                "to": "#36383e"
+              },
+              "footer": {
+                "from": "#40424a",
+                "to": "#36383e"
+              },
+              "card": {
+                "from": "#463c36",
+                "to": "#38302a"
+              },
+              "paper": {
+                "from": "#443a34",
+                "to": "#362e28"
+              },
+              "modal": {
+                "from": "#4a3a3a",
+                "to": "#3c2e2e"
+              },
+              "input": {
+                "from": "#3a3a42",
+                "to": "#44444c"
+              },
+              "inputFocus": {
+                "from": "#40404a",
+                "to": "#40404a"
+              },
+              "button": {
+                "from": "#5a5a62",
+                "to": "#44444c"
+              },
+              "buttonHover": {
+                "from": "#6a6a72",
+                "to": "#52525c"
+              },
+              "buttonActive": {
+                "from": "#32323a",
+                "to": "#3c3c44"
+              },
+              "actionIcon": {
+                "from": "#5a5a62",
+                "to": "#48484f"
+              },
+              "actionIconHover": {
+                "from": "#6a6a72",
+                "to": "#56565e"
+              },
+              "navLink": {
+                "from": "#55555f",
+                "to": "#44444e"
+              },
+              "navLinkHover": {
+                "from": "#65656f",
+                "to": "#54545e"
+              },
+              "navLinkActive": {
+                "from": "#2e2e36",
+                "to": "#383842"
+              },
+              "menu": {
+                "from": "#443a34",
+                "to": "#382f2a"
+              },
+              "menuItem": {
+                "from": "#443a34",
+                "to": "#3a3230"
+              },
+              "menuItemHover": {
+                "from": "#54483e",
+                "to": "#463c34"
+              },
+              "badge": {
+                "from": "#6b4a9e",
+                "to": "#543a80"
+              },
+              "tooltip": {
+                "from": "#3a2c46",
+                "to": "#2e2438"
+              },
+              "table": {
+                "from": "#42382f",
+                "to": "#38302a"
+              },
+              "tableHeader": {
+                "from": "#4c4040",
+                "to": "#40363a"
+              },
+              "code": {
+                "from": "#1c1c22",
+                "to": "#141418"
+              },
+              "divider": {
+                "from": "#54545c",
+                "to": "#54545c"
+              },
+              "scrollbar": {
+                "from": "#3e3e46",
+                "to": "#34343c"
+              },
+              "scrollbarThumb": {
+                "from": "#5e5e68",
+                "to": "#4a4a54"
+              }
+            },
+            "textColors": {
+              "header": "#e8e8f0",
+              "footer": "#d8d8e0",
+              "navbar": "#e0e0e8",
+              "button": "#ffffff",
+              "buttonHover": "#ffffa0",
+              "buttonActive": "#ffd700",
+              "actionIcon": "#e0e0e8",
+              "actionIconHover": "#ffffff",
+              "navLink": "#f0f0f8",
+              "navLinkHover": "#ffffa0",
+              "navLinkActive": "#ffd700",
+              "menu": "#e8dcc8",
+              "menuItem": "#e8dcc8",
+              "menuItemHover": "#ffffff",
+              "badge": "#f0e8ff",
+              "tooltip": "#e0d0f0",
+              "table": "#e8dcc8",
+              "tableHeader": "#f0e4d0",
+              "code": "#c8c8d4",
+              "input": "#e8e8f0",
+              "inputFocus": "#ffffff",
+              "card": "#e8dcc8",
+              "paper": "#e8dcc8",
+              "modal": "#f0dcd8",
+              "main": "#dcdce4",
+              "divider": "#c8c8d0",
+              "scrollbar": "#c8c8d0",
+              "scrollbarThumb": "#e0e0e8"
+            },
+            "borders": {
+              "navbar": {
+                "width": 1,
+                "color": "#241e1a",
+                "edges": [
+                  "right"
+                ]
+              },
+              "header": {
+                "width": 1,
+                "color": "#241e1a",
+                "edges": [
+                  "bottom"
+                ]
+              },
+              "footer": {
+                "width": 1,
+                "color": "#241e1a",
+                "edges": [
+                  "top"
+                ]
+              },
+              "tableHeader": {
+                "width": 1,
+                "color": "#241e1a",
+                "edges": [
+                  "bottom"
+                ]
+              },
+              "divider": {
+                "width": 1,
+                "color": "#4a4a54"
+              },
+              "navLinkActive": {
+                "inset": true,
+                "width": 3,
+                "color": "#0c0906",
+                "radius": 0
+              },
+              "navLink": {
+                "radius": 0
+              }
+            },
+            "backgrounds": {
+              "body": {
+                "image": "assets/tx-nether.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-dark",
+                "opacity": 0.05
+              },
+              "app": {
+                "image": "assets/tx-nether.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-dark",
+                "opacity": 0.05
+              },
+              "main": {
+                "image": "assets/tx-nether.gif",
+                "size": "cover",
+                "repeat": "no-repeat",
+                "position": "center",
+                "overlay": "scrim-dark",
+                "opacity": 0.05
+              },
+              "navbar": {
+                "image": "assets/tx-blackbrick.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.12
+              },
+              "header": {
+                "image": "assets/tx-deepslate.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.16
+              },
+              "footer": {
+                "image": "assets/tx-obsidian-ui.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.82
+              },
+              "card": {
+                "image": "assets/tx-darkoak.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.42
+              },
+              "paper": {
+                "image": "assets/tx-darkoak.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.42
+              },
+              "modal": {
+                "image": "assets/tx-netherbrick.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.12
+              },
+              "input": {
+                "image": "assets/tx-obsidian-ui.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.62
+              },
+              "navLink": {
+                "image": "assets/tx-obsidian-ui.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.06
+              },
+              "navLinkActive": {
+                "image": "assets/tx-obsidian-ui.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.32
+              },
+              "code": {
+                "image": "assets/tx-obsidian.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.32
+              },
+              "table": {
+                "image": "assets/tx-darkoak.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.22
+              },
+              "tableHeader": {
+                "image": "assets/tx-obsidian-ui.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.26
+              },
+              "badge": {
+                "image": "assets/tx-amethyst.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.1
+              },
+              "menu": {
+                "image": "assets/tx-darkoak.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.14
+              },
+              "menuItem": {
+                "image": "assets/tx-darkoak.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.16
+              },
+              "tooltip": {
+                "image": "assets/tx-amethyst.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.14
+              },
+              "divider": {
+                "image": "assets/tx-obsidian-ui.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.42
+              },
+              "scrollbar": {
+                "image": "assets/tx-deepslate.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.38
+              },
+              "scrollbarThumb": {
+                "image": "assets/tx-obsidian-ui.png",
+                "size": "auto",
+                "repeat": "repeat",
+                "overlay": "scrim-dark",
+                "opacity": 0.26
+              }
+            },
+            "frames": {
+              "button": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "buttonHover": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "buttonActive": {
+                "image": "assets/frame-button-down-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "actionIcon": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "actionIconHover": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "input": {
+                "image": "assets/frame-sunken-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "inputFocus": {
+                "image": "assets/frame-sunken-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "card": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 7,
+                "repeat": "repeat"
+              },
+              "paper": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 7,
+                "repeat": "repeat"
+              },
+              "modal": {
+                "image": "assets/frame-brick-dark.png",
+                "slice": 8,
+                "width": 9,
+                "repeat": "repeat"
+              },
+              "menu": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "tooltip": {
+                "image": "assets/frame-amethyst-dark.png",
+                "slice": 8,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "code": {
+                "image": "assets/frame-sunken-dark.png",
+                "slice": 6,
+                "width": 5,
+                "repeat": "repeat"
+              },
+              "table": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "tableHeader": {
+                "image": "assets/frame-brick-dark.png",
+                "slice": 8,
+                "width": 4,
+                "repeat": "repeat"
+              },
+              "badge": {
+                "image": "assets/frame-amethyst-dark.png",
+                "slice": 8,
+                "width": 3,
+                "repeat": "repeat"
+              },
+              "navbar": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "header": {
+                "image": "assets/frame-plank-dark.png",
+                "slice": 8,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLink": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLinkHover": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "navLinkActive": {
+                "image": "assets/frame-button-down-dark.png",
+                "slice": 6,
+                "width": 6,
+                "repeat": "repeat"
+              },
+              "menuItem": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 4,
+                "repeat": "repeat"
+              },
+              "menuItemHover": {
+                "image": "assets/frame-button-dark.png",
+                "slice": 6,
+                "width": 4,
+                "repeat": "repeat"
+              }
+            },
+            "colors": {}
+          },
+          "fontFamily": {
+            "font": "pixel",
+            "fallback": "system-ui"
+          },
+          "fontFamilyHeadings": {
+            "font": "pixel",
+            "fallback": "system-ui"
+          },
+          "fontFamilyMonospace": {
+            "font": "pixel",
+            "fallback": "monospace"
+          },
+          "fontSize": "20px"
+        },
+        "fonts": [
+          {
+            "id": "pixel",
+            "source": "assets/font-pixel-10.woff2",
+            "weight": {
+              "min": 400,
+              "max": 900
+            },
+            "style": "normal",
+            "display": "swap"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "host": [
+      "ui.theme"
+    ],
+    "network": {
+      "mode": "none",
+      "allow": []
+    },
+    "filesystem": {
+      "package": "readOnly",
+      "pluginData": "none",
+      "workspace": "none"
+    },
+    "process": {
+      "spawn": "none"
+    }
+  },
+  "secrets": [],
+  "dependencies": {
+    "plugins": {},
+    "runtime": {}
+  }
+}
